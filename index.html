@@ -15,21 +15,18 @@
 
   <section class="featured">
     <h2>Showreel</h2>
-    <div class="featured-video">
-      <div class="video-wrapper">
-        <iframe 
-        src="https://player.vimeo.com/video/1070844422?h=9bc96cb17e" 
-        allow="fullscreen" 
-        allowfullscreen>
-        </iframe>
-        <div class="overlay">
-          <span class="button">▶ Watch</span>
+    <div class="video">
+      <div class="video-wrapper" data-video-id="1070844422">
+        <div class="video-thumbnail" style="background-image: url('https://vumbnail.com/1070844422.jpg');">
+          <div class="overlay">
+            <p class="title">Showreel – My Style</p>
+            <span class="button">▶ Watch</span>
+          </div>
         </div>
-  </div>
-      
+      </div>
     </div>
   </section>
-
+      
   <section class="video-gallery">
     <h2>Short Films</h2>
     <div class="videos">
@@ -165,6 +162,24 @@
     <p>Interested in working together?</p>
     <p>Email me at <a href="mailto:zanebernardworks@gmail.com">zanebernardworks@gmail.com</a></p>
   </section>
+  <script>
+    document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+      const videoId = wrapper.getAttribute('data-video-id');
+  
+      wrapper.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://player.vimeo.com/video/${videoId}?autoplay=1`;
+        iframe.allowFullscreen = true;
+        iframe.setAttribute('allow', 'autoplay; fullscreen');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.borderRadius = '8px';
+        wrapper.innerHTML = '';
+        wrapper.appendChild(iframe);
+      });
+    });
+  </script>
 
   <footer>
     <p>© 2025 Zane – Videographer</p>
