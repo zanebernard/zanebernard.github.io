@@ -109,14 +109,21 @@ section h2 {
   padding: 3rem 1rem;
   text-align: center;
 }
+
 .featured h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
+
+.featured-video {
+  display: flex;
+  justify-content: center;
+}
+
 .featured-video iframe {
-  width: 90%;
-  max-width: 960px;
-  height: 540px;
+  width: 100%;
+  max-width: 1000px;
+  height: 562px; /* 16:9 aspect ratio for 1000px width */
   border: none;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
