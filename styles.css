@@ -164,12 +164,11 @@ section h2 {
 }
 
 .featured .video {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
-  flex-wrap: nowrap;
+  width: 100%;
 }
 
 
@@ -178,19 +177,22 @@ section h2 {
   margin-bottom: 2rem;
 }
 
-/* Make only the featured (Showreel) section larger */
 .featured .video-wrapper {
   width: 90vw;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
+  transform: none;
 }
 
 @media (max-width: 768px) {
   .featured .video-wrapper {
     transform: scale(1); /* prevent it from getting too large on mobile */
   }
+}
+
+.featured .video-thumbnail {
+  padding-top: 56.25%;
+  background-size: cover;
 }
 
 /* Optional: center the overlay text inside the thumbnail */
