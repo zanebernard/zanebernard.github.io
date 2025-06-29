@@ -1,12 +1,13 @@
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: #f4f4f4;
-  color: #333;
+  background: #121212;
+  color: #f0f0f0;
 }
 
 header {
-  background: #111;
+  background: #000;
   color: white;
   text-align: center;
   padding: 2rem 1rem;
@@ -32,10 +33,10 @@ section {
 .about {
   text-align: center;
   padding: 2rem 1rem;
-  background: #fff;
+  background: #1a1a1a;
   max-width: 800px;
   margin: 2rem auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   border-radius: 8px;
 }
 .about h2 {
@@ -59,11 +60,12 @@ section h2 {
 .video {
   flex: 1 1 300px;
   max-width: 320px;
-  background: white;
+  background: #2a2a2a;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
   text-align: center;
+  color: #f0f0f0;
 }
 
 .video iframe {
@@ -76,20 +78,21 @@ section h2 {
 .video p {
   margin-top: 0.5rem;
   font-size: 0.95rem;
+  color: #ccc;
 }
 
 .video-gallery:nth-of-type(even) {
-  background-color: #ffffff;
+  background-color: #1a1a1a;
 }
 .video-gallery:nth-of-type(odd) {
-  background-color: #f0f0f0;
+  background-color: #181818;
 }
 
 .contact {
   text-align: center;
   padding: 3rem 1rem;
-  background: #222;
-  color: white;
+  background: #111;
+  color: #ccc;
 }
 
 .contact a {
@@ -123,7 +126,7 @@ section h2 {
 .featured-video iframe {
   width: 100%;
   max-width: 1000px;
-  height: 562px; /* 16:9 aspect ratio for 1000px width */
+  height: 562px;
   border: none;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
@@ -132,7 +135,7 @@ section h2 {
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: #111;
-  color: #aaa;
+  background: #000;
+  color: #888;
   font-size: 0.9rem;
 }
