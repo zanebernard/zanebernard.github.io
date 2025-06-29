@@ -168,6 +168,37 @@ section h2 {
   margin-bottom: 2rem;
 }
 
+/* Make only the featured (Showreel) section larger */
+.featured .video-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .featured .video-wrapper {
+    transform: scale(1); /* prevent it from getting too large on mobile */
+  }
+}
+
+/* Optional: center the overlay text inside the thumbnail */
+.featured .video-thumbnail .overlay {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Optional: make title and button bigger for Showreel */
+.featured .video-thumbnail .title {
+  font-size: 1.4rem;
+}
+
+.featured .video-thumbnail .button {
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+}
+
+
 footer {
   text-align: center;
   padding: 1.5rem;
