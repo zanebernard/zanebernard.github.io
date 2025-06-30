@@ -168,6 +168,13 @@ section h2 {
   margin-bottom: 2rem;
 }
 
+.featured-iframe {
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+}
+
 .featured .video {
   display: flex;
   justify-content: center;
