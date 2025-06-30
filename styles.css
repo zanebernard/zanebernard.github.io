@@ -168,7 +168,6 @@ section h2 {
   margin-bottom: 2rem;
 }
 
-/* Center and enlarge showreel */
 .featured .video {
   display: flex;
   justify-content: center;
@@ -177,7 +176,7 @@ section h2 {
 
 .featured .video-wrapper {
   width: 100%;
-  max-width: 800px;
+  max-width: 1920px; /* Wider than short films */
   aspect-ratio: 16 / 9;
 }
 
@@ -188,6 +187,7 @@ section h2 {
   background-position: center;
   border-radius: 12px;
 }
+
 
 
 /* Optional: center the overlay text inside the thumbnail */
