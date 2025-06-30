@@ -163,37 +163,32 @@ section h2 {
   text-align: center;
 }
 
-.featured .video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 1rem;
-  width: 100%;
-}
-
-
 .featured h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
-.featured .video-wrapper {
-  width: 90vw;
-  max-width: 1200px;
-  margin: 0 auto;
-  transform: none;
+/* Center and enlarge showreel */
+.featured .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .featured .video-wrapper {
-    transform: scale(1); /* prevent it from getting too large on mobile */
-  }
+.featured .video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
 }
 
 .featured .video-thumbnail {
-  padding-top: 56.25%;
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-position: center;
+  border-radius: 12px;
 }
+
 
 /* Optional: center the overlay text inside the thumbnail */
 .featured .video-thumbnail .overlay {
