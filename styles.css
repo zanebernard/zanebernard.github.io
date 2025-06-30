@@ -179,14 +179,15 @@ section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .featured .video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1920px; /* Wider than short films */
+  max-width: 960px; /* test smaller width to see change */
   aspect-ratio: 16 / 9;
+  background: red; /* just for visual testing */
 }
+
 
 .featured .video-thumbnail {
   width: 100%;
