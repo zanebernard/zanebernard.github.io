@@ -276,25 +276,29 @@ footer {
 
 
 @media (max-width: 768px) {
+@media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
   }
 
   section {
-    padding: 2rem 0;
     width: 100%;
     max-width: none;
+    overflow-x: hidden;
+  }
+
+  .video-gallery {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 1rem;
   }
 
   .videos {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 1rem;
-    -webkit-overflow-scrolling: touch;
-    padding: 1rem;
     gap: 1rem;
+    scroll-padding-left: 1rem;
   }
 
   .video {
@@ -313,21 +317,8 @@ footer {
   .videos::-webkit-scrollbar {
     display: none;
   }
-
-  .featured .video {
-    padding: 0 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .featured .video-wrapper {
-    width: 100%;
-    max-width: 100%;
-    padding-top: 56.25%;
-    margin: 0 auto;
-  }
 }
+
 
 }
 
