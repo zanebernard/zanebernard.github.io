@@ -175,6 +175,12 @@
         iframe.style.width = '100%';
         iframe.style.height = '100%';
         iframe.style.borderRadius = '8px';
+  
+        // Optional: add custom class if it's a featured video
+        if (wrapper.closest('.featured')) {
+          iframe.classList.add('featured-iframe');
+        }
+  
         wrapper.innerHTML = '';
         wrapper.appendChild(iframe);
       });
