@@ -300,30 +300,23 @@ footer {
     scroll-snap-type: x mandatory;
     scroll-padding-left: 1rem;
     padding-left: 1rem;
-    margin-left: -1rem;
+    scroll-behavior: smooth;
   }
 
   .scroll-container::-webkit-scrollbar {
     display: none;
   }
 
-  .video-gallery {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding-left: 1rem;
-  }
-
   .videos {
     display: flex;
     flex-wrap: nowrap;
     gap: 1rem;
-    scroll-padding-left: 1rem;
   }
 
   .video {
     flex: 0 0 auto;
     scroll-snap-align: start;
+    scroll-margin-left: 1rem;
     width: 80vw;
     max-width: 300px;
     min-width: 250px;
@@ -337,9 +330,5 @@ footer {
   .videos::-webkit-scrollbar {
     display: none;
   }
-}
-
-
-
 }
 
