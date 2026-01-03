@@ -2,5 +2,6 @@
 
 A website to showcase my reel and various videography work
 
-This website was created by me
-Hosted by github pages
+HTML and CSS was written by me
+
+Website is hosted by github pages
